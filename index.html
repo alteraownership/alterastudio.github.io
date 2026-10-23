@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altera Studio — VFX & Game Art</title>
+  <meta name="description" content="Altera Studio — VFX and game art studio. Concept, environment, character and real-time effects for games. Turning imagination into reality." />
+  <meta property="og:title" content="Altera Studio — VFX & Game Art" />
+  <meta property="og:description" content="Turning imagination into reality. Concept · Environment · Character · Effects." />
+  <meta property="og:image" content="assets/banner.jpg" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <img src="assets/logo.png" alt="Altera Studio logo" />
+      <span>ALTERA</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#showreel">Showreel</a>
+      <a href="#contact" class="btn btn--small">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg"></div>
+    <canvas id="sparks" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <p class="eyebrow">VFX &amp; Game Art Studio</p>
+      <h1 class="hero__title">ALTERA<span>STUDIO</span></h1>
+      <p class="hero__tag">Turning imagination<br />into reality</p>
+      <div class="hero__line"></div>
+      <div class="hero__cta">
+        <a href="#work" class="btn">View our work</a>
+        <a href="#contact" class="btn btn--ghost">Start a project</a>
+      </div>
+    </div>
+    <ul class="hero__pillars">
+      <li>Concept</li><li>Environment</li><li>Character</li><li>Effects</li>
+    </ul>
+    <p class="hero__motto">Art for a New World.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section__head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Crafting worlds, frame by frame</h2>
+      <p class="lead">From the first sketch to the last spark, we build visuals that make games feel alive — optimized for real-time engines.</p>
+    </div>
+    <div class="services">
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 48 48"><path d="M8 40 L22 8 L26 8 L40 40" /><path d="M14 28 H34" /><circle cx="24" cy="18" r="2" /></svg></div>
+        <h3>Concept Art</h3>
+        <p>Visual development, key art and mood boards that define the look and soul of your game before production starts.</p>
+        <ul><li>Key art &amp; illustrations</li><li>Style guides</li><li>Props &amp; mood boards</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 48 48"><path d="M4 40 L16 22 L24 32 L32 16 L44 40 Z" /><circle cx="36" cy="10" r="4" /></svg></div>
+        <h3>Environment</h3>
+        <p>Immersive worlds — floating citadels, ruined kingdoms, alien skies — built as concepts, matte paintings and game-ready 3D.</p>
+        <ul><li>Matte painting</li><li>3D environments</li><li>Skyboxes &amp; lighting</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="12" r="6" /><path d="M12 44 C12 30 16 22 24 22 C32 22 36 30 36 44" /><path d="M12 30 L4 42" /></svg></div>
+        <h3>Character</h3>
+        <p>Heroes, villains and creatures with personality — from silhouette exploration to turnarounds and high-detail models.</p>
+        <ul><li>Character design</li><li>Turnarounds</li><li>Creature design</li></ul>
+      </article>
+      <article class="card card--accent reveal">
+        <div class="card__icon"><svg viewBox="0 0 48 48"><path d="M24 4 L27 21 L44 24 L27 27 L24 44 L21 27 L4 24 L21 21 Z" /></svg></div>
+        <h3>Real-time VFX</h3>
+        <p>Spells, impacts, auras, explosions and ambient magic — performant effects for Unity &amp; Unreal that hit hard and run smooth.</p>
+        <ul><li>Skill &amp; combat FX</li><li>Shaders &amp; particles</li><li>UI / UX effects</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section--dark" id="work">
+    <div class="section__head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Selected work</h2>
+    </div>
+    <div class="filters reveal" id="filters">
+      <button class="is-active" data-filter="all">All</button>
+      <button data-filter="concept">Concept</button>
+      <button data-filter="environment">Environment</button>
+      <button data-filter="character">Character</button>
+      <button data-filter="effects">Effects</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="item item--wide reveal" data-cat="concept">
+        <img src="assets/banner.jpg" alt="Floating citadel key art" loading="lazy" />
+        <figcaption><span>Concept</span>Citadel of the Shattered Sky</figcaption>
+      </figure>
+      <figure class="item item--tall reveal" data-cat="effects">
+        <img src="assets/work-effects.jpg" alt="Celestial ring effect" loading="lazy" />
+        <figcaption><span>Effects</span>Celestial Ring</figcaption>
+      </figure>
+      <figure class="item reveal" data-cat="environment">
+        <img src="assets/work-environment.jpg" alt="Floating islands environment" loading="lazy" />
+        <figcaption><span>Environment</span>Drifting Isles</figcaption>
+      </figure>
+      <figure class="item reveal" data-cat="character">
+        <img src="assets/work-character.jpg" alt="Cloaked wanderer character" loading="lazy" />
+        <figcaption><span>Character</span>The Wanderer</figcaption>
+      </figure>
+      <figure class="item item--full reveal" data-cat="environment">
+        <img src="assets/work-concept.jpg" alt="Misty valley landscape" loading="lazy" />
+        <figcaption><span>Environment</span>Valley of Mists</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SHOWREEL -->
+  <section class="section" id="showreel">
+    <div class="section__head reveal">
+      <p class="eyebrow">Showreel</p>
+      <h2>See it in motion</h2>
+    </div>
+    <div class="reel reveal">
+      <!-- Replace data-video with your YouTube video ID -->
+      <div class="reel__frame" id="reel" data-video="">
+        <img src="assets/banner.jpg" alt="Showreel cover" />
+        <button class="reel__play" aria-label="Play showreel">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+        </button>
+        <p class="reel__soon" id="reelSoon">Showreel 2026 — coming soon</p>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div><strong data-count="120">0</strong><span>Projects delivered</span></div>
+      <div><strong data-count="40">0</strong><span>Game titles</span></div>
+      <div><strong data-count="15">0</strong><span>Artists</span></div>
+      <div><strong data-count="8">0</strong><span>Years of craft</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark contact" id="contact">
+    <div class="contact__info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build your world</h2>
+      <p class="lead">Tell us about your game, timeline and the art you need. We'll get back within 48 hours.</p>
+      <a class="contact__mail" href="mailto:altera.ownership@gmail.com">altera.ownership@gmail.com</a>
+      <div class="socials">
+        <a href="#" aria-label="ArtStation">ArtStation</a>
+        <a href="#" aria-label="Behance">Behance</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <form class="form reveal" id="contactForm">
+      <label>Name<input name="name" required /></label>
+      <label>Email<input name="email" type="email" required /></label>
+      <label>Service
+        <select name="service">
+          <option>Concept Art</option><option>Environment</option><option>Character</option><option>Real-time VFX</option><option>Full art package</option>
+        </select>
+      </label>
+      <label>Project details<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="form__note">Opens your email app with the message ready to send.</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="" />
+    <p>© <span id="year"></span> Altera Studio. All rights reserved.</p>
+    <p class="footer__motto">Art for a New World.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
